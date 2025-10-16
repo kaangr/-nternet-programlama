@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML-CSS Ornekleri</title>
+<style>
+  /* Genel Stiller */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+  }
+  h1 {
+    color: #111;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
+  h2 {
+    color: #333;
+  }
+  hr {
+    border: 1px solid #ddd;
+    margin: 30px 0;
+  }
+
+  /* Ornek 2: Buton Stili */
+  .buton {
+    background-color: #008CBA; /* Mavi */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .buton:hover {
+    background-color: #005f7a; /* Koyu Mavi */
+  }
+
+  /* Ornek 3: Flexbox Stili */
+  .dis-kutu {
+    display: flex;
+    justify-content: center; /* Yatay orta */
+    align-items: center; /* Dikey orta */
+    
+    height: 300px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+  }
+  .ic-kutu {
+    width: 100px;
+    height: 100px;
+    background-color: #f44336; /* Kirmizi */
+    color: white;
+    text-align: center;
+    /* icerigi ortalamak icin flex de kullanabilirsin ama bu da calisir */
+    line-height: 100px; 
+  }
+
+</style>
+</head>
+<body>
+
+  <h1>HTML-CSS Calisma Reposu</h1>
+
+  <h2>Ornek 1: Temel Stiller</h2>
+  <p>Bu bir paragraf. Stili body etiketinden aliyor.</p>
+
+  <hr>
+
+  <h2>Ornek 2: Buton Hover Ornegi</h2>
+  <button class="buton">Fareyi Getir</button>
+
+  <hr>
+
+  <h2>Ornek 3: Flexbox Ortalama</h2>
+  <div class="dis-kutu">
+    <div class="ic-kutu">
+      Orta
+    </div>
+  </div>
+
+</body>
+</html>
